@@ -44,6 +44,5 @@ func (l *Logger) Error(msg ...interface{}) {
 }
 
 func (l *Logger) Println(msg ...interface{}) {
-	log.SetFlags(log.LstdFlags | log.Lshortfile)
 	log.Println(msg...)
 }
